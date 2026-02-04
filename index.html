@@ -1,219 +1,186 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8" />
-<title>MAHJONG500 Hadir sebagai Platform Game Digital yang Andal dan Inovatif</title>
-<meta name="description" content="MAHJONG500 menghadirkan pengalaman bermain Mahjong digital modern dengan server Thailand yang cepat dan stabil. Nikmati tampilan elegan, akses multi perangkat, dan fitur lengkap.">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+<title>MAHJONG500 – Platform Game Digital Andal & Inovatif</title>
+
+<meta name="description" content="MAHJONG500 menghadirkan pengalaman Mahjong digital modern dengan server Thailand yang cepat, stabil, ringan, dan dapat diakses dari semua perangkat.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
-<meta name="google-site-verification" content="oq4bxYKNebqYs0jbQgXDAnh56Vx6h14nmmyShYmIpMk" />
-<link rel="shortcut icon" href="https://file001.nxtengine.net/open-img-pub/brands/mahjong500.gif" type="image/gif">
+<meta name="author" content="MAHJONG500">
+<meta name="theme-color" content="#000000">
+
+<link rel="canonical" href="https://mahjong500.example/">
+
+<meta property="og:title" content="MAHJONG500 – Game Mahjong Digital Modern">
+<meta property="og:description" content="Platform Mahjong digital dengan server Thailand cepat, tampilan modern, dan akses multi perangkat.">
+<meta property="og:type" content="website">
+
+<meta name="google-site-verification" content="oq4bxYKNebqYs0jbQgXDAnh56Vx6h14nmmyShYmIpMk">
+
+<link rel="icon" href="https://file001.nxtengine.net/open-img-pub/brands/mahjong500.gif" type="image/gif">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; font-family:"Montserrat",sans-serif; }
-body { color:#fff; overflow-x:hidden; }
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Montserrat",sans-serif}
+body{color:#fff;overflow-x:hidden}
+.bg-gradient-dark{background:radial-gradient(circle at top left,#1a1a1a,#000 60%)}
 
-/* ===== BACKGROUND ===== */
-.bg-gradient-dark { background: radial-gradient(circle at top left, #1a1a1a, #000 60%); }
-
-/* ===== PARTICLE CANVAS ===== */
-#particles-js { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
-
-/* ===== GOLD SHINE EFFECT ===== */
-.gold-shine {
-position: relative;
-overflow: hidden;
-z-index: 1;
-}
-.gold-shine::after, .gold-shine::before {
-content:"";
-position:absolute;
-top:0; left:-150%;
-width:50%; height:100%;
+#particle-canvas{
+position:fixed;
+inset:0;
+z-index:0;
 pointer-events:none;
 }
-.gold-shine::after {
-background: linear-gradient(120deg, transparent 0%, rgba(255,215,0,0.1) 20%, rgba(255,215,0,0.55) 50%, rgba(255,215,0,0.1) 80%, transparent 100%);
-animation: goldShineMove 2s infinite linear;
-}
-.gold-shine::before {
-background: linear-gradient(120deg, transparent 0%, rgba(255,215,0,0.0) 20%, rgba(255,215,0,0.4) 50%, rgba(255,215,0,0.0) 80%, transparent 100%);
-animation: goldShineMove 3s infinite linear;
-}
-@keyframes goldShineMove { 0%{left:-150%;} 100%{left:200%;} }
 
-/* ===== GENERAL LAYOUT ===== */
-.container { max-width:1080px; margin:auto; padding:0 15px; position:relative; z-index:1; }
+.container{max-width:1080px;margin:auto;padding:0 15px;position:relative;z-index:1}
+header{padding:30px 0;border-bottom:2px dashed #ffd000}
 
-header { padding:30px 0; border-bottom:2px dashed #ffd000; }
+nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+nav img{max-width:200px}
 
-nav { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; }
-nav img { max-width:200px; }
-
-.form-wrapper { display:flex; gap:15px; flex-wrap:wrap; }
-.form-wrapper a { flex:1; min-width:120px; }
-
-.form-wrapper button {
-width:100%; height:42px; border-radius:6px;
-background:transparent; color:#fff; font-weight:700;
-border:2px solid #ffd000;
-box-shadow:4px 4px 8px #ffd000, 4px 4px 8px inset #ffffff33;
-transition:.3s;
-}
-.form-wrapper button:hover {
-transform:scale(1.08);
-box-shadow:-4px -4px 8px #ffd000, -4px -4px 8px inset #ffffff33;
-cursor:pointer;
-}
-
-main { margin-top:20px; display:flex; flex-direction:column; gap:20px; }
-
-.banner { width:100%; border-radius:10px; }
-
-table { width:100%; border-collapse:collapse; text-align:center; background:#111; }
-th, td { border:2px solid #ffd000; padding:10px; }
-
-.neon-button {
-background:transparent;
-border:1px solid #ffd000;
+.btn{
+display:block;
+width:100%;
+height:42px;
+line-height:42px;
+text-align:center;
+border-radius:6px;
+font-weight:700;
 color:#fff;
-padding:10px 30px;
-box-shadow:2px 2px 2px #ffd000, -2px -2px 2px #ffd000;
+border:2px solid #ffd000;
+text-decoration:none;
+background:transparent;
+box-shadow:4px 4px 8px #ffd000,4px 4px 8px inset #ffffff33;
 transition:.3s;
 }
-.neon-button:hover {
-box-shadow:2px 2px 2px #ffd000 inset, -2px -2px 2px #ffd000 inset;
-transform:scale(1.1);
-cursor:pointer;
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:-4px -4px 8px #ffd000,-4px -4px 8px inset #ffffff33;
 }
 
-article {
-background:rgba(0,0,0,0.65);
-backdrop-filter: blur(6px);
-box-shadow:0 0 20px rgba(255,208,0,0.5);
-border:1px solid rgba(255,208,0,0.6);
+.form-wrapper{display:flex;gap:15px;flex-wrap:wrap}
+.form-wrapper a{flex:1;min-width:120px}
+
+main{margin-top:20px;display:flex;flex-direction:column;gap:20px}
+.banner{width:100%;border-radius:10px}
+
+table{width:100%;border-collapse:collapse;background:#111;text-align:center}
+th,td{border:2px solid #ffd000;padding:10px}
+
+article{
+background:rgba(0,0,0,.65);
+backdrop-filter:blur(6px);
+border:1px solid rgba(255,208,0,.6);
+box-shadow:0 0 20px rgba(255,208,0,.5);
 border-radius:12px;
 padding:30px;
 line-height:1.7;
 }
 
-article h1, article h2 { margin:15px 0 10px; color:#ffd000; }
+article h1,article h2{color:#ffd000;margin:15px 0 10px}
 
-footer { text-align:center; padding:20px 0; margin-top:30px; font-size:14px; opacity:.8; position:relative; z-index:1; }
+footer{text-align:center;padding:20px 0;margin-top:30px;font-size:14px;opacity:.8}
 </style>
 </head>
 
 <body class="bg-gradient-dark">
 
-<!-- PARTICLE BACKGROUND -->
-<canvas id="particles-js"></canvas>
+<canvas id="particle-canvas"></canvas>
 
-<header class="container gold-shine">
-<nav>
+<header class="container">
+<nav role="navigation">
 <img src="https://file001.nxtengine.net/open-img-pub/brands/mahjong500.gif" alt="Logo MAHJONG500">
 <div class="form-wrapper">
-<a href="https://heylink.me/duniagamedigital.com"><button class="gold-shine">LOGIN</button></a>
-<a href="https://bit.ly/m/linkmahjong500"><button class="gold-shine">DAFTAR</button></a>
+<a href="https://heylink.me/duniagamedigital.com" class="btn">LOGIN</a>
+<a href="https://bit.ly/m/linkmahjong500" class="btn">DAFTAR</a>
 </div>
 </nav>
 </header>
 
 <main class="container">
-<img class="banner" src="https://dunia-karet-gambar.pages.dev/slot%20gacor%20resmi.webp" alt="Mahjong500 Server Thailand">
+
+<img src="https://dunia-karet-gambar.pages.dev/slot%20gacor%20resmi.webp" alt="Mahjong500 Server Thailand" class="banner">
 
 <table>
+<thead>
 <tr><th colspan="2">Link Akses MAHJONG500</th></tr>
-<tr><td>Login Resmi</td><td><a href="https://heylink.me/duniagamedigital.com"><button class="neon-button gold-shine">LOGIN</button></a></td></tr>
-<tr><td>Daftar Akun</td><td><a href="https://bit.ly/m/linkmahjong500"><button class="neon-button gold-shine">DAFTAR</button></a></td></tr>
+</thead>
+<tbody>
+<tr>
+<td>Login Resmi</td>
+<td><a href="https://heylink.me/duniagamedigital.com" class="btn">LOGIN</a></td>
+</tr>
+<tr>
+<td>Daftar Akun</td>
+<td><a href="https://bit.ly/m/linkmahjong500" class="btn">DAFTAR</a></td>
+</tr>
+</tbody>
 </table>
 
-<article class="gold-shine">
+<article>
 <h1>MAHJONG500: Platform Game Digital Andal & Inovatif</h1>
-<p>MAHJONG500 menghadirkan pengalaman bermain Mahjong digital modern dengan server Thailand yang cepat dan stabil. Desain elegan, ringan, dan akses multi perangkat membuat pengalaman bermain nyaman untuk semua pengguna.</p>
+<p>MAHJONG500 menghadirkan pengalaman Mahjong digital modern dengan server Thailand yang cepat dan stabil. Desain elegan dan ringan membuat permainan nyaman di semua perangkat.</p>
 
-<h2>Server Thailand yang Stabil</h2>
-<p>Koneksi cepat, respons real-time, dan visual permainan halus membuat setiap sesi bermain lebih nyaman tanpa gangguan.</p>
-
-<h2>Tampilan Modern & Ringan</h2>
-<p>Desain intuitif memudahkan navigasi bagi pengguna baru maupun berpengalaman, tanpa membebani perangkat.</p>
+<h2>Server Thailand Stabil</h2>
+<p>Respons real-time, visual halus, dan koneksi optimal.</p>
 
 <h2>Akses Multi Perangkat</h2>
-<p>Bisa dimainkan lewat HP, tablet, atau desktop tanpa aplikasi tambahan.</p>
-
-<h2>Kesimpulan</h2>
-<p>MAHJONG500 adalah platform Mahjong digital inovatif dengan performa tinggi, desain modern, dan akses mudah dari semua perangkat.</p>
+<p>Main lewat HP, tablet, atau desktop tanpa instalasi.</p>
 </article>
 
-<article class="gold-shine">
-<h2>Daftar & Main Sekarang</h2>
-<p>Rasakan keseruan bermain Mahjong digital di MAHJONG500 dengan server Thailand yang stabil dan responsif. Tampilan modern dan navigasi mudah membuat pengalaman bermain lebih menyenangkan.</p>
-<p style="text-align:center; margin-top:20px;">
-<a href="https://bit.ly/m/linkmahjong500"><button class="neon-button gold-shine">DAFTAR SEKARANG</button></a>
-</p>
-</article>
 </main>
 
 <footer class="container">
 © 2026 MAHJONG500. All Rights Reserved.
 </footer>
 
-<!-- PARTICLE SCRIPT -->
 <script>
-const canvas = document.getElementById("particles-js");
-const ctx = canvas.getContext("2d");
-let particlesArray;
+const canvas=document.getElementById("particle-canvas");
+const ctx=canvas.getContext("2d");
+let particles=[];
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-window.addEventListener("resize", () => {
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-init();
-});
-
-class Particle {
-constructor(x, y, size, speedX, speedY) {
-this.x = x; this.y = y; this.size = size;
-this.speedX = speedX; this.speedY = speedY;
+function resize(){
+const ratio=window.devicePixelRatio||1;
+canvas.width=window.innerWidth*ratio;
+canvas.height=window.innerHeight*ratio;
+ctx.scale(ratio,ratio);
 }
-update() {
-this.x += this.speedX;
-this.y += this.speedY;
-if(this.x<0||this.x>canvas.width)this.speedX*=-1;
-if(this.y<0||this.y>canvas.height)this.speedY*=-1;
+resize();
+window.addEventListener("resize",resize);
+
+class Particle{
+constructor(){
+this.x=Math.random()*window.innerWidth;
+this.y=Math.random()*window.innerHeight;
+this.size=Math.random()*2+0.5;
+this.vx=(Math.random()-.5)*.4;
+this.vy=(Math.random()-.5)*.4;
 }
-draw() {
-ctx.fillStyle = "rgba(255,215,0,0.7)";
+update(){
+this.x+=this.vx;
+this.y+=this.vy;
+if(this.x<0||this.x>window.innerWidth)this.vx*=-1;
+if(this.y<0||this.y>window.innerHeight)this.vy*=-1;
+}
+draw(){
+ctx.fillStyle="rgba(255,215,0,.7)";
 ctx.beginPath();
-ctx.arc(this.x, this.y, this.size,0,Math.PI*2);
+ctx.arc(this.x,this.y,this.size,0,Math.PI*2);
 ctx.fill();
 }
 }
 
-function init(){
-particlesArray = [];
-let count = (canvas.width * canvas.height)/9000;
-for(let i=0;i<count;i++){
-let size = Math.random()*2+0.5;
-let x = Math.random()*canvas.width;
-let y = Math.random()*canvas.height;
-let speedX = (Math.random()-0.5)*0.5;
-let speedY = (Math.random()-0.5)*0.5;
-particlesArray.push(new Particle(x,y,size,speedX,speedY));
-}
-}
+for(let i=0;i<120;i++)particles.push(new Particle());
+
 function animate(){
 ctx.clearRect(0,0,canvas.width,canvas.height);
-for(let i=0;i<particlesArray.length;i++){
-particlesArray[i].update();
-particlesArray[i].draw();
-}
+particles.forEach(p=>{p.update();p.draw();});
 requestAnimationFrame(animate);
 }
-init();
 animate();
 </script>
+
 </body>
 </html>
